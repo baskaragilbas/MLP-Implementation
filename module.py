@@ -108,8 +108,8 @@ class MLP(object):
         plt.plot(scale_error, color='blue', linewidth=2, label = 'error')
         plt.plot(accuracy, color='red', linewidth=2, label = 'accuracy')
         plt.title('Learning Rate ' + str(self.learn_rate))
-        plt.xlabel('Quantity')
-        plt.ylabel('Error')
+        plt.xlabel('Epoch')
+        plt.ylabel('Quantity')
         plt.legend()
         
 
