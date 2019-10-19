@@ -7,7 +7,7 @@ file = str(path) + "\\Iris3.csv"
 
 data = np.genfromtxt(file, skip_header=True, delimiter=',')
 
-slp1 = MLP(data,1000,0.8) #data, epoch, k-fold, learning rate 0.1
+mlp1 = MLP(data,1000,0.8,80) #data, epoch, k-fold, learning rate 0.1
 
 #uncomment one only
-slp1.run()
+mlp1.run()
