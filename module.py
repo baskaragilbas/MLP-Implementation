@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 class MLP(object):
     
-    def __init__(self, iris, epoch,  learn_rate):
+    def __init__(self, iris, epoch,  learn_rate, split):
         self.iris = iris
-        self.data_split(80)
+        self.data_split(split)
         self.learn_rate = learn_rate
         self.epoch = epoch
         self.hidden_weight =np.random.uniform(low=0, high=1, size=(5,4))
